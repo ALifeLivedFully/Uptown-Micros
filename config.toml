@@ -1,0 +1,128 @@
+baseURL       = "http://example.org/"
+languageCode  = "en-us"
+title         = "Uptown Micros | Healthy Local Microgreens"
+theme         = "roxo-hugo"
+summarylength = 25
+
+# Site Menus
+[menu]
+  # Navbar Menus
+  [[menu.nav]]
+    name    = "About"
+    url     = "about"
+    weight  = 1
+  [[menu.nav]]
+    name    = "Mission"
+    url     = "mission"
+    weight  = 2
+  [[menu.nav]]
+    name    = "Garden"
+    url     = "garden"
+    weight  = 3
+  [[menu.nav]]
+    name    = "Contact"
+    url     = "contact"
+    weight  = 4
+
+# Site Params
+[params]
+  logo = "images/logo.png"
+  logo_footer = "images/ALLF.png"
+  favicon_icon = "images/favicon.ico"
+  favicon_shortcut_icon = "images/favicon.png"
+  custom_stylesheets = []   # [ "scss/my_1.scss", "scss/my_2.scss" ]
+  dateFormat = "26 FEB 1994"
+  # Meta data
+  description = "Website created by ALifeLivedFully"
+  author = "ALifeLivedFully"
+  # Google Analitycs
+  googleAnalitycsID = "Your ID"
+  # We're using formspree.io for form handling, paste your formspree url below
+  fabform  = "https://fabform.io/f/USAg2Jl"
+
+  # Contact Form
+  [params.contactForm]
+    placeholder_first_name        = "First Name"
+    placeholder_last_name         = "Last Name"
+    placeholder_email             = "Email"
+    placeholder_project_type      = "Reason for contact"
+    placeholder_about_the_project = "Message"
+    send_message                  = "Send Message"
+
+    [[params.contactForm.projectType]]
+      value = "Place order"
+      title  = "Place an order"
+    [[params.contactForm.projectType]]
+      value = "Get quote"
+      title  = "Get a quote"
+  
+  # Navbar Action Button
+  [params.navAction]
+    status  = true
+    name    = "Place an order"
+    url     = "contact"
+
+  # Banner Section
+  [params.banner]
+    enable                = true
+    background_image      = "images/backgrounds/background.jpg"
+    heading               = "Healthy local microgreens"
+    tagline               = "Uptown Micros"
+    primary_button        = "My Mission"
+    primary_button_url    = "mission"
+    secondary_button      = "Order now"
+    secondary_button_url  = "contact"
+
+  [params.call_to_action]
+    enable              = true
+    background_image    = "images/backgrounds/cta-background.jpg"
+    title               = "LET’S WORK TOGETHER"
+    primary_button      = "Submit Query"
+    primary_button_url  = "contact"
+    secondary_button    = "About"
+    secondary_button_url = "about"
+
+  [params.footer]
+    params.footer.qr_print = false
+    # Footer Contact Info
+    [params.footer.contactInfo]
+      title   = "Contact Info"
+      address = "Located in Uptown"
+      phone   = "555-555-5555"
+      email   = "info@alifelivedfully.com"
+      # Footer Sitemap
+      [params.footer.sitemap]
+        title   = "Sitemap"
+        [[params.footer.sitemap.link]]
+          name = "About Company"
+          url  = "about"
+        [[params.footer.sitemap.link]]
+          name = "Mission"
+          url  = "mission"
+        [[params.footer.sitemap.link]]
+          name = "Garden"
+          url  = "garden"
+        [[params.footer.sitemap.link]]
+          name = "Contact"
+          url  = "contact"
+      # Footer Social Media
+      [params.footer.social]
+        title   = "Social Media"
+        [[params.footer.social.link]]
+          name = "Facebook"
+          url  = "#"
+        [[params.footer.social.link]]
+          name = "Instagram"
+          url  = "#"
+        [[params.footer.social.link]]
+          name = "Youtube"
+          url  = "#"
+        [[params.footer.social.link]]
+          name = "TikTok"
+          url  = "#"
+      # Footer Service
+      [params.footer.service]
+        title       = "Uptown Micros"
+        description = "Grow delicios food<br>Eat the food<br>Repeat"
+      [params.footer.back_to_top]
+        description = "Top"
